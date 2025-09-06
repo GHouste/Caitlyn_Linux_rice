@@ -1,0 +1,94 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 0,
+  "width": 1600,
+  "spacing": 0,
+  "margin-bottom": 0,
+  "margin-top": 4,
+  "margin-right": 500,
+  "margin-left": 500,
+  "modules-left":[
+    "custom/applauncher",
+    "custom/spotify",
+    "tray"
+  ],
+  "modules-center":[
+    "hyprland/workspaces"
+  ],
+  "modules-right":[
+    "network",
+    "bluetooth",
+    "pulseaudio",
+    "battery",
+    "clock",
+    "custom/powerbutton"
+  ],
+
+
+
+"taskbar":{
+  "format":"{icon}"
+},
+
+"hyprland/workspaces":{
+  "format":"{icon}",
+  "format-icons":{
+    "active": "",
+    "default": "◯"
+  },
+  "all-outputs": false
+  
+},
+"custom/powerbutton":{
+  "format":"",
+  "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 15",
+  "tooltip":false
+},
+
+"tray":{
+  "icon-size": 14,
+  "spacing":5
+},
+
+"custom/applauncher":{
+    "format": "Apps",
+    "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 285",
+    "tooltip": false
+},
+
+"clock":{
+  "format": " {:%H:%M}",
+  "format-alt":" {:%a %d/%m/%Y}",
+    "tooltip": false
+  },
+
+"battery": {
+    "tooltip":false,
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄{capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-full": "󱈑 {capacity}%",
+    "format-icons": [
+      "󱊡",
+      "󱊢",
+      "󱊣"
+    ]
+    
+  },
+
+  "custom/spotify": {
+    "exec": "/usr/bin/python3 /home/GH0uste/.config/waybar/custom modules/mediaplayer.py --player spotify",
+    "format": "  {}  ",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+}
+
+}

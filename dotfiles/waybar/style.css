@@ -1,0 +1,53 @@
+*{
+    font-family: Maple Mono;
+    border-radius: 8;
+    font-size: 14px;
+    padding: 0px;
+    background: transparent;
+
+}
+
+#custom-spotify,
+#tray,
+#custom-applauncher,
+#workspaces,
+#pulseaudio,
+#network,
+#bluetooth,
+#custom-powerbutton,
+#clock,
+#battery{
+    background-image: linear-gradient(to bottom, #d9c8dd 100%);
+    margin: 5px;
+    margin-right: 0px;
+    padding: 4px 8px;
+    border-radius: 20px;
+    color: #353f3f;
+
+    border-image: linear-gradient(135deg, #00fdf7, #B200ED);
+
+    transition-duration: 120ms;
+}
+
+ #workspaces button {
+color: #353f3f;
+
+}
+
+#workspaces button.active {
+color: #353f3f;
+}
+
+
+#custom-powerbutton{
+ margin-right: 10px;
+ 
+}
+
+#clock:hover{
+     background-image: linear-gradient(135deg, #00fdf7, #B200ED) ;;
+}
+
+
+/*background-image: linear-gradient(135deg, #00fdf7, #B200ED) ;*/
+

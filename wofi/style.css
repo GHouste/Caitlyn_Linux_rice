@@ -1,0 +1,51 @@
+*{
+font-family: Maple Mono;
+font-size: 15px;
+background: transparent;
+}
+
+
+#window{
+    margin: 5px;
+    background-image: linear-gradient(135deg, #00fdf7, #B200ED) ;
+    border-radius: 2px;
+    padding: 3px; 
+    border-radius: 5px; 
+}
+
+#outer-box{
+    margin: 5px;
+    background-image: linear-gradient(135deg, #00fdf7, #B200ED) ;
+    
+   
+}
+
+
+#input{
+    margin: 5px;
+    background-color: #1e1e2e;
+    border-radius: 5px;
+
+}
+
+#img{
+    margin: 5px;
+}
+
+
+
+
+#entry {
+    background-color: #1e1e2e;
+    color: #ffffff;
+    border-radius: 0px;
+}
+
+
+#entry:selected {
+    background: transparent;
+    color: #1e1e2e;
+}
+
+
+
