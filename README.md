@@ -8,5 +8,5 @@ Apps used in this rice:
   - wofi
   - swaybg
   - kitty
-  - 
+  - wlogout
   
