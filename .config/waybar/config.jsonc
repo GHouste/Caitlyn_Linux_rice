@@ -10,8 +10,7 @@
   "margin-left": 500,
   "modules-left":[
     "custom/applauncher",
-    "custom/spotify",
-    "tray"
+    "custom/spotify"
   ],
   "modules-center":[
     "hyprland/workspaces"
@@ -31,6 +30,25 @@
   "format":"{icon}"
 },
 
+ "custom/spotify": {
+
+    "format": "{}",
+
+       "interval": 1,
+       
+       "return-type": "json",
+       
+       "exec": "waybar_media_display",
+       
+       "exec-if": "pgrep spotify",
+       
+       "on-click":"playerctl --player=spotify play-pause",
+ 
+       "escape": true
+       
+    },
+
+
 "hyprland/workspaces":{
   "format":"{icon}",
   "format-icons":{
@@ -40,6 +58,7 @@
   "all-outputs": false
   
 },
+
 "custom/powerbutton":{
   "format":"",
   "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 15",
@@ -80,15 +99,7 @@
       "󱊣"
     ]
     
-  },
+  }
 
-  "custom/spotify": {
-    "exec": "/usr/bin/python3 /home/GH0uste/.config/waybar/custom modules/mediaplayer.py --player spotify",
-    "format": "  {}  ",
-    "return-type": "json",
-    "on-click": "playerctl play-pause",
-    "on-scroll-up": "playerctl next",
-    "on-scroll-down": "playerctl previous"
-}
-
+  
 }
