@@ -2,6 +2,7 @@
 My first ever linux rice. 
 
 Apps used in this rice:
+  - Thunar
   - fastfetch
   - hyprland
   - waybar
@@ -10,4 +11,3 @@ Apps used in this rice:
   - kitty
   - wlogout
   
-To spotify addon I used this: https://lib.rs/crates/waybar_media_display (potentialy module will be deleted later)
