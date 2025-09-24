@@ -80,8 +80,7 @@
 },
 
 "clock":{
-  "format": " {:%H:%M}",
-  "format-alt":" {:%a %d/%m/%Y}",
+  "format": " {:%a %d/%m %H:%M}",
     "tooltip": false
   },
 
