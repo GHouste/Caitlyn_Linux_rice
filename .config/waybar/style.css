@@ -7,33 +7,68 @@
 
 }
 
-#custom-applauncher,
-#workspaces,
-#pulseaudio,
-#network,
-#bluetooth,
+
 #custom-powerbutton,
 #clock,
 #battery{
-    background-image: linear-gradient(to bottom, #d9c8dd 100%);
+    background-image: linear-gradient(to bottom, #353f3f 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
-    border-radius: 20px;
-    color: #353f3f;
+    border-radius: 10px;
+    border: 1.5px solid #B200ED;
+    color: #B200ED;
 
-    border-image: linear-gradient(135deg, #00fdf7, #B200ED);
+    transition-duration: 120ms;
+}
+
+#pulseaudio,
+#bluetooth,
+#network{
+    background-image: linear-gradient(to bottom, #353f3f 100%);
+    margin: 5px;
+    margin-right: 0px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    border: 1.5px solid #863FF0;
+    color: #863FF0;
+
+    transition-duration: 120ms;
+}
+
+#custom-applauncher,
+#tray{
+    background-image: linear-gradient(to bottom, #353f3f 100%);
+    margin: 5px;
+    margin-right: 0px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    border: 1.5px solid #00fdf7;
+    color: #00fdf7;
+
+    transition-duration: 120ms;
+}
+
+#workspaces{
+    background-image: linear-gradient(to bottom, #353f3f 100%);
+    margin: 5px;
+    margin-right: 0px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    border: 1.5px solid #597FF2;
+    color: #597FF2;
 
     transition-duration: 120ms;
 }
 
  #workspaces button {
-color: #353f3f;
+color: #597FF2;
 
 }
 
 #workspaces button.active {
 color: #353f3f;
+background-image: linear-gradient(to bottom, #597FF2 100%);
 }
 
 

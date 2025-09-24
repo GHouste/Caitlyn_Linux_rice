@@ -58,10 +58,6 @@
 
 "hyprland/workspaces":{
   "format":"{icon}",
-  "format-icons":{
-    "active": "",
-    "default": "◯"
-  },
   "all-outputs": false
   
 },
@@ -81,7 +77,8 @@
 
 "clock":{
   "format": " {:%a %d/%m %H:%M}",
-    "tooltip": false
+  "on-click": "gnome-calendar",
+  "tooltip": false
   },
 
 "battery": {
