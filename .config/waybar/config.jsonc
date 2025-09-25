@@ -27,8 +27,23 @@
     "custom/powerbutton"
   ],
 
-"bluetooth":{
 
+"pulseaudio":{
+  "format-icons":{
+    "muted":"",
+    "low":"",
+    "medium":"",
+    "high":""
+  },
+  "on-click": "pavucontrol"
+},
+"bluetooth":{
+  "on-click": "blueberry"
+},
+
+"network":{
+  "on-click": "",
+  "tooltop":false
 },
 
 "cpu":{
