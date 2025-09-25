@@ -10,8 +10,10 @@
   "margin-left": 500,
   "modules-left":[
     "custom/applauncher",
-    "custom/spotify",
-    "tray"
+    "tray",
+    "cpu",
+    "memory",
+    "temperature"
   ],
   "modules-center":[
     "hyprland/workspaces"
@@ -25,7 +27,23 @@
     "custom/powerbutton"
   ],
 
+"bluetooth":{
 
+},
+
+"cpu":{
+  "format":" {usage}%",
+  "tooltip":false
+},
+
+"memory":{
+  "format":" {}%",
+  "tooltip":false
+},
+"temperature":{
+  "format":" {}℃",
+  "tooltip":false
+},
 
 "taskbar":{
   "format":"{icon}"
@@ -36,25 +54,6 @@
         "spacing": 10,
         "cursor": true
     },
-
- "custom/spotify": {
-
-    "format": "{}",
-
-       "interval": 1,
-       
-       "return-type": "json",
-       
-       "exec": "waybar_media_display",
-       
-       "exec-if": "pgrep spotify",
-       
-       "on-click":"playerctl --player=spotify play-pause",
- 
-       "escape": true
-       
-    },
-
 
 "hyprland/workspaces":{
   "format":"{icon}",
@@ -76,7 +75,7 @@
 },
 
 "clock":{
-  "format": " {:%a %d/%m %H:%M}",
+  "format": " {:%a %d/%m %H:%M}",
   "on-click": "gnome-calendar",
   "tooltip": false
   },

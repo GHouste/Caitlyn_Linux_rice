@@ -61,6 +61,21 @@
     transition-duration: 120ms;
 }
 
+#temperature,
+#memory,
+#cpu{
+    background-image: linear-gradient(to bottom, #353f3f 100%);
+    margin: 5px;
+    margin-right: 0px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    border: 1.5px solid #2DBEF5;
+    color: #2DBEF5;
+
+    transition-duration: 120ms;
+
+}
+
  #workspaces button {
 color: #597FF2;
 
@@ -75,10 +90,6 @@ background-image: linear-gradient(to bottom, #597FF2 100%);
 #custom-powerbutton{
  margin-right: 10px;
  
-}
-
-#clock:hover{
-     background-image: linear-gradient(135deg, #00fdf7, #B200ED) ;;
 }
 
 /*background-image: linear-gradient(135deg, #00fdf7, #B200ED) ;*/
