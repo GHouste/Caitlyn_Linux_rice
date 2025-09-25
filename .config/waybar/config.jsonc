@@ -28,21 +28,26 @@
   ],
 
 
-"pulseaudio":{
-  "format-icons":{
-    "muted":"",
-    "low":"",
-    "medium":"",
-    "high":""
-  },
-  "on-click": "pavucontrol"
+
+"pulseaudio": {
+   
+    "format": " {volume}%",
+    "on-click": "pavucontrol",
+    "tooltip": false
+
 },
 "bluetooth":{
+  "format-disabled":" Off",
+  "format-disconnected":"No Signal",
   "on-click": "blueberry"
 },
 
 "network":{
+  "format-wifi":" {bandwidthDownBits}",
+  "format-ethernet":" {bandwidthDownBits}",
+  "format-disconnected":" No Network",
   "on-click": "",
+  "interval": 5,
   "tooltop":false
 },
 
