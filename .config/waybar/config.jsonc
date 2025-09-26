@@ -83,7 +83,7 @@
 
 "custom/powerbutton":{
   "format":"",
-  "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 15",
+  "on-click": "wlogout --buttons-per-row=2",
   "tooltip":false
 },
 
