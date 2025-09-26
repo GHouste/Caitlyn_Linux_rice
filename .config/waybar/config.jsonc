@@ -46,7 +46,7 @@
   "format-wifi":" {bandwidthDownBits}",
   "format-ethernet":" {bandwidthDownBits}",
   "format-disconnected":" No Network",
-  "on-click": "",
+  "on-click": "nm-connection-editor",
   "interval": 5,
   "tooltop":false
 },

@@ -36,6 +36,7 @@
     transition-duration: 120ms;
 }
 
+
 #custom-applauncher,
 #tray{
     background-image: linear-gradient(to bottom, #353f3f 100%);
