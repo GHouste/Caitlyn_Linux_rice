@@ -36,6 +36,18 @@
     transition-duration: 120ms;
 }
 
+#custom-spotify {
+     background-image: linear-gradient(to bottom, #353f3f 100%);
+    margin: 5px;
+    margin-right: 0px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    border: 1.5px solid #00fdf7;
+    color: #00fdf7;
+
+    transition-duration: 120ms;
+}
+
 
 #custom-applauncher,
 #tray{
