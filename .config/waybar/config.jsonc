@@ -91,7 +91,7 @@
 
 "custom/powerbutton":{
   "format":"",
-  "on-click": "wlogout --buttons-per-row=2",
+  "on-click": "swaync-client -t",
   "tooltip":false
 },
 
@@ -125,6 +125,6 @@
       "󱊣"
     ]
     
-  },
-  
+  }
+ //wlogout --buttons-per-row=2 
 }
