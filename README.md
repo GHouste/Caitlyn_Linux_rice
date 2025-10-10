@@ -10,3 +10,4 @@ Apps used in this rice:
   - swaybg
   - kitty
   - wlogout
+  - swaync
