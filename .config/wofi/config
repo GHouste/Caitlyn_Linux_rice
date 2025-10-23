@@ -8,3 +8,4 @@ no_actions=true
 prompt=search
 width=500
 hide_scroll=true
+insensitive=true
