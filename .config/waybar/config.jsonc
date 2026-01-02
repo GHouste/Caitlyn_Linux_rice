@@ -28,6 +28,18 @@
     "custom/powerbutton"
   ],
 
+  "custom/applauncher":{
+    "format": "Apps",
+    "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 285",
+    "tooltip": false
+},
+
+"tray" : {
+        "icon-size": 13,
+        "spacing": 10,
+        "cursor": true
+    },
+
 "custom/spotify":{
   "exec": "/usr/bin/python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
   "format": "  {}",
@@ -35,29 +47,6 @@
   "on-click": "playerctl play-pause",
   "on-scroll-up": "playerctl next",
   "on-scroll-down": "playerctl previous"
-},
-
-"pulseaudio": {
-   
-    "format": " {volume}%",
-    "format-muted": " {volume}%",
-    "on-click": "pavucontrol",
-    "tooltip": false
-
-},
-"bluetooth":{
-  "format-disabled":" Off",
-  "format-disconnected":"No Signal",
-  "on-click": "blueberry"
-},
-
-"network":{
-  "format-wifi":" {bandwidthDownBits}",
-  "format-ethernet":" {bandwidthDownBits}",
-  "format-disconnected":" No Network",
-  "on-click": "nm-connection-editor",
-  "interval": 5,
-  "tooltop":false
 },
 
 "cpu":{
@@ -74,40 +63,35 @@
   "tooltip":false
 },
 
-"taskbar":{
-  "format":"{icon}"
-},
-
-"tray" : {
-        "icon-size": 13,
-        "spacing": 10,
-        "cursor": true
-    },
-
 "hyprland/workspaces":{
   "format":"{icon}",
   "all-outputs": false
   
 },
 
-"custom/powerbutton":{
-  "format":"",
-  "on-click": "swaync-client -t",
-  "tooltip":false
+"network":{
+  "format-wifi":" {bandwidthDownBits}",
+  "format-ethernet":" {bandwidthDownBits}",
+  "format-disconnected":" No Network",
+  "on-click": "nm-connection-editor",
+  "interval": 5,
+  "tooltop":false
 },
 
+"bluetooth":{
+  "format-disabled":" Off",
+  "format-disconnected":"No Signal",
+  "on-click": "blueberry"
+},
 
-"custom/applauncher":{
-    "format": "Apps",
-    "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top -y 285",
+"pulseaudio": {
+   
+    "format": " {volume}%",
+    "format-muted": " {volume}%",
+    "on-click": "pavucontrol",
     "tooltip": false
-},
 
-"clock":{
-  "format": " {:%a %d/%m %H:%M}",
-  "on-click": "gnome-calendar",
-  "tooltip": false
-  },
+},
 
 "battery": {
     "tooltip":false,
@@ -126,6 +110,22 @@
       "󱊣"
     ]
     
-  }
- //wlogout --buttons-per-row=2 
+  },
+
+"clock":{
+  "format": " {:%a %d/%m %H:%M}",
+  "on-click": "gnome-calendar",
+  "tooltip": false
+  },
+
+  "custom/powerbutton":{
+  "format":"",
+  "on-click": "swaync-client -t",
+  "tooltip":false
+},
+
+"taskbar":{
+  "format":"{icon}"
+}
+
 }
