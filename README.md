@@ -16,3 +16,8 @@ Apps used in this rice:
   - kitty
   - swaync
   - swayosd
+
+  to do:
+  - screenshot and screen recording
+  - rice swaync
+  - better looking bash shell
