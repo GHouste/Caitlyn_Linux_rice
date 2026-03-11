@@ -9,7 +9,7 @@
 
 #custom-applauncher,
 #tray{
-    background-image: linear-gradient(to bottom, #353f3f 100%);
+    background-image: linear-gradient(to bottom, #2e2f37 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
@@ -22,7 +22,7 @@
 }
 
 #custom-spotify {
-     background-image: linear-gradient(to bottom, #353f3f 100%);
+    background-image: linear-gradient(to bottom, #2e2f37 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
@@ -36,7 +36,7 @@
 #cpu,
 #memory,
 #temperature{
-    background-image: linear-gradient(to bottom, #353f3f 100%);
+    background-image: linear-gradient(to bottom, #2e2f37 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
@@ -48,7 +48,7 @@
 }
 
 #workspaces{
-    background-image: linear-gradient(to bottom, #353f3f 100%);
+    background-image: linear-gradient(to bottom, #2e2f37 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
@@ -64,14 +64,14 @@ color: #597FF2;
 }
 
 #workspaces button.active {
-color: #353f3f;
+color: #2e2f37;
 background-image: linear-gradient(to bottom, #597FF2 100%);
 }
 
 #network,
 #bluetooth,
 #pulseaudio{
-    background-image: linear-gradient(to bottom, #353f3f 100%);
+    background-image: linear-gradient(to bottom, #2e2f37 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
@@ -85,7 +85,7 @@ background-image: linear-gradient(to bottom, #597FF2 100%);
 #battery,
 #clock,
 #custom-powerbutton{
-    background-image: linear-gradient(to bottom, #353f3f 100%);
+    background-image: linear-gradient(to bottom, #2e2f37 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
