@@ -16,7 +16,7 @@ Apps used in this rice:
   - kitty
   - swaync
   - swayosd
-  - hyprpaper
+  - hyprshot
 
   to do:
   - screenshot and screen recording
