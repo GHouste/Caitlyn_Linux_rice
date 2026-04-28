@@ -20,6 +20,6 @@ Apps used in this rice:
   - hyprshot
 
   to do:
-  - screenshot and screen recording
+  - screen recording tool
   - rice swaync
-  - better looking bash shell
+  - microphone icon in waybar
