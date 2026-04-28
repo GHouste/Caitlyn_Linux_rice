@@ -5,6 +5,7 @@ Fonts used in this rice:
 - maple mono
 - maple mono chinsese
 - font awesome free
+- powerline-fonts
 
 Apps used in this rice:
   - Thunar
