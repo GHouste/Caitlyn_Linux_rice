@@ -22,4 +22,3 @@ Apps used in this rice:
   to do:
   - screen recording tool
   - rice swaync
-  - microphone icon in waybar

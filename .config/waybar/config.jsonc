@@ -85,12 +85,11 @@
 },
 
 "pulseaudio": {
-   
-    "format": " {volume}%",
-    "format-muted": " {volume}%",
-    "on-click": "pavucontrol",
-    "tooltip": false
-
+    "format": "{format_source}/  {volume}%{icon}",
+    "format-source": " ",
+    "format-source-muted": " ",
+    "format-muted": "{format_source}/ ",
+    "on-click": "pavucontrol"
 },
 
 "battery": {
