@@ -89,7 +89,8 @@
     "format-source": " ",
     "format-source-muted": " ",
     "format-muted": "{format_source}/ ",
-    "on-click": "pavucontrol"
+    "on-click": "pavucontrol",
+    "tooltip":false
 },
 
 "battery": {
