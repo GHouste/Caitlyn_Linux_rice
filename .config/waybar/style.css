@@ -1,3 +1,13 @@
+
+@define-color bg-color #1e1e2e;
+@define-color font-color #cdd6f4;
+@define-color farleft-color #00fdf7;
+@define-color left-color #2DBEF5;
+@define-color center-color #597FF2;
+@define-color right-color #863FF0;
+@define-color farright-color #B200ED;
+
+
 *{
     font-family: Maple Mono;
     border-radius: 8;
@@ -9,26 +19,34 @@
 
 #custom-applauncher,
 #tray{
-    background-image: linear-gradient(to bottom, #2e2f37 100%);
+    background-image: linear-gradient(to bottom, @bg-color 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
     border-radius: 10px;
-    border: 1.5px solid #00fdf7;
-    color: #00fdf7;
+    border: 1.5px solid @farleft-color;
+    color: @farleft-color;
 
     transition-duration: 120ms;
 
 }
 
+#tray menu {
+    background-color: @bg-color; 
+    border: 1.5px solid @farleft-color;
+    color: @font-color;            
+    border-radius: 10px;        
+}
+
+
 #custom-spotify {
-    background-image: linear-gradient(to bottom, #2e2f37 100%);
+    background-image: linear-gradient(to bottom, @bg-color 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
     border-radius: 10px;
-    border: 1.5px solid #00fdf7;
-    color: #00fdf7;
+    border: 1.5px solid @farleft-color;
+    color: @farleft-color;
 
     transition-duration: 120ms;
 }
@@ -36,48 +54,48 @@
 #cpu,
 #memory,
 #temperature{
-    background-image: linear-gradient(to bottom, #2e2f37 100%);
+    background-image: linear-gradient(to bottom, @bg-color 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
     border-radius: 10px;
-    border: 1.5px solid #2DBEF5;
-    color: #2DBEF5;
+    border: 1.5px solid @left-color;
+    color: @left-color;
 
     transition-duration: 120ms;
 }
 
 #workspaces{
-    background-image: linear-gradient(to bottom, #2e2f37 100%);
+    background-image: linear-gradient(to bottom, @bg-color 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
     border-radius: 10px;
-    border: 1.5px solid #597FF2;
-    color: #597FF2;
+    border: 1.5px solid @center-color;
+    color: @center-color;
 
     transition-duration: 120ms;
 }
 
  #workspaces button {
-color: #597FF2;
+color: @center-color;
 }
 
 #workspaces button.active {
-color: #2e2f37;
-background-image: linear-gradient(to bottom, #597FF2 100%);
+color: @bg-color;
+background-image: linear-gradient(to bottom, @center-color 100%);
 }
 
 #network,
 #bluetooth,
 #pulseaudio{
-    background-image: linear-gradient(to bottom, #2e2f37 100%);
+    background-image: linear-gradient(to bottom, @bg-color 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
     border-radius: 10px;
-    border: 1.5px solid #863FF0;
-    color: #863FF0;
+    border: 1.5px solid @right-color;
+    color: @right-color;
 
     transition-duration: 120ms;
 }
@@ -85,13 +103,13 @@ background-image: linear-gradient(to bottom, #597FF2 100%);
 #battery,
 #clock,
 #custom-powerbutton{
-    background-image: linear-gradient(to bottom, #2e2f37 100%);
+    background-image: linear-gradient(to bottom, @bg-color 100%);
     margin: 5px;
     margin-right: 0px;
     padding: 4px 8px;
     border-radius: 10px;
-    border: 1.5px solid #B200ED;
-    color: #B200ED;
+    border: 1.5px solid @farright-color;
+    color: @farright-color;
 
     transition-duration: 120ms;
 }
