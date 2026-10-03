@@ -1,6 +1,12 @@
 # Caintlyn-Linux-Rice
 My first ever linux rice. 
 
+
+| Program | Function |
+|---------|----------|
+| hyprland| window manager|
+| waybar  | status bar|
+| wofi    | app launcher|
 Fonts used in this rice:
 - maple mono
 - maple mono chinsese
